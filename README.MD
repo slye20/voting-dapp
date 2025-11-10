@@ -1,4 +1,6 @@
 # 🗳️ Decentralized Voting dApp
+![App Preview](preview.png)
+
 
 ### **Summary**
 
@@ -73,23 +75,55 @@ This project demonstrates end-to-end Web3 development — from smart contract de
 
 ## 💻 Frontend Specification
 
-**Framework:** React (Vite)
+**Framework:** Next.js 14 + TypeScript + Tailwind CSS
 
 ### Key Components
 
 - **Wallet Connection:** MetaMask integration to authenticate users.
-- **Proposals List:** Displays description and vote count for each option.
-- **Voting Buttons:** Trigger on-chain vote transactions via ethers.js.
-- **Status Display:** Shows connection status, network, and voting state.
+- **Proposals List:** Beautiful card-based layout displaying descriptions, vote counts, and status.
+- **Voting Buttons:** Trigger on-chain vote transactions with real-time feedback.
+- **Status Display:** Shows connection status, network, and voting state with modern UI.
+- **Admin Controls:** Add proposals and close voting with transaction confirmations.
 
 ### UI Flow
 
 1. User opens the app.
-2. Clicks **“Connect Wallet”** → MetaMask prompt.
+2. Clicks **"Connect Wallet"** → MetaMask prompt.
 3. Proposals load from blockchain.
-4. User clicks **“Vote”** → Transaction confirmation in MetaMask.
+4. User clicks **"Vote"** → Transaction confirmation in MetaMask.
 5. After mining, results update instantly.
 6. Admin can close voting to lock further submissions.
+
+### Features Implemented
+
+✅ **Beautiful Modern UI** - Gradient designs, smooth animations, responsive layout
+✅ **Real-time Transaction Status** - Inline feedback for all blockchain operations
+✅ **Smart Contract Integration** - Full ethers.js v6 integration with TypeScript
+✅ **Admin Dashboard** - Create proposals and manage voting status
+✅ **Vote Tracking** - Prevents double-voting with real-time status checks
+✅ **Network Detection** - Automatic network identification and display
+✅ **Error Handling** - User-friendly error messages and recovery
+
+## 🚀 Quick Start
+
+### Smart Contract (Already Deployed)
+
+Your contract is deployed on Sepolia at:
+```
+Check: ignition/deployments/chain-11155111/deployed_addresses.json
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open http://localhost:3000 and connect your MetaMask wallet!
+
+For detailed setup instructions, see [FRONTEND_SETUP.md](FRONTEND_SETUP.md)
 
 ---
 
@@ -214,5 +248,3 @@ By completing this project, you’ll understand:
 > 
 
 ---
-
-Would you like me to format this next as a **Markdown README** (ready to paste into your GitHub repo) with copyable code blocks and nice section dividers?
