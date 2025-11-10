@@ -18,3 +18,8 @@
 
 # Hardhat coverage reports
 /coverage
+
+.env
+
+# Sensitive deployment data
+ignition/deployments/
